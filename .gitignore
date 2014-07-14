@@ -9,12 +9,10 @@
 # vim stuff
 !.vimrc
 !.vim/
-!.vim/colors/
 !.vim/colors/*
 
 # all my zsh stuff, with oh-my-zsh repository cloned
 !.oh-my-zsh/custom/jreese.zsh
-!.oh-my-zsh/custom/themes/
 !.oh-my-zsh/custom/themes/*
 
 # tmux stuff
