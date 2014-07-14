@@ -21,12 +21,6 @@
 !.zsh_custom/*
 !.zsh_custom/themes
 !.zsh_custom/themes/*
-# !.oh-my-zsh/
-# .oh-my-zsh/.gitignore
-# !.oh-my-zsh/custom/
-# !.oh-my-zsh/custom/jreese.zsh
-# !.oh-my-zsh/custom/themes/
-# !.oh-my-zsh/custom/themes/*
 
 # tmux stuff
 !.tmux.conf
