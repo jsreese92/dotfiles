@@ -30,6 +30,6 @@
 # Ubuntu stuff
 !.gnome-terminal-zenburn.sh
 
-# Cygwin stuff
+# Cygwin/Windows stuff
 !.minttyrc
 !.zenburn.vssettings
