@@ -15,3 +15,4 @@
 to set up a new machine more easily
   * an example of this is setting up .backup and .swp directories in .vim
 * test cygwin
+* test ubuntu
