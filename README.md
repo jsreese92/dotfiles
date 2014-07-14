@@ -9,4 +9,4 @@ Machines currently synced
 TODO
 ----
 * Write script to create necessary directories and pull from repositories I'm using
-to set up a new machine more easily
+to set up a new machine more easily.
