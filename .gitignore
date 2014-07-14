@@ -17,6 +17,8 @@
 !.vim/colors/*
 
 # all my zsh stuff, with oh-my-zsh repository cloned
+!.zsh_custom/
+!.zsh_custom/*
 # !.oh-my-zsh/
 # .oh-my-zsh/.gitignore
 # !.oh-my-zsh/custom/
