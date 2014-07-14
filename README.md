@@ -9,6 +9,7 @@
 ## Machines currently synced
 * My MacbookPro
 * Windows VM at work running Cygwin
+* Ubuntu 12.04 Desktop VM at work
 
 ## TODO
 * Write script to create necessary directories and pull from repositories I'm using
