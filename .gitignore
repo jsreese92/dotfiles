@@ -5,7 +5,14 @@
 !.gitignore
 
 !README.md
+
+# vim stuff
 !.vimrc
+!.vim/
+!.vim/colors/
+!.vim/colors/*
+
+# all my zsh stuff, with oh-my-zsh repository cloned
 !.oh-my-zsh/
 !.oh-my-zsh/custom/
 !.oh-my-zsh/custom/*
