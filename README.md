@@ -10,4 +10,5 @@ TODO
 ----
 * Write script to create necessary directories and pull from repositories I'm using
 to set up a new machine more easily
+
 > an example of this is setting up .backup and .swp directories in .vim
