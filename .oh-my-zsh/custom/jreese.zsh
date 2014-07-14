@@ -23,4 +23,4 @@ alias grep='grep -i'
 # removes temp files before launching tmux
 # alias tmux='rm -rf /tmp/tmux* && tmux'
 
-# ZSH_THEME="robbyrussell_j"
+ZSH_THEME="robbyrussell_j"
