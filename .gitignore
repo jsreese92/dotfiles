@@ -19,3 +19,6 @@
 
 # tmux stuff
 !.tmux.conf
+
+# Ubuntu stuff
+!.gnome-terminal-zenburn.sh
