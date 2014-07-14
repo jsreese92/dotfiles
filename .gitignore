@@ -1,0 +1,11 @@
+# Ignore everything, except specified dotfiles
+
+*
+
+!.gitignore
+
+!README.md
+!.vimrc
+!.oh-my-zsh/
+!.oh-my-zsh/custom/
+!.oh-my-zsh/custom/*
