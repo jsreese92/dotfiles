@@ -1,4 +1,4 @@
-# Dotfiles for vim, zsh, and tmux
+# Configuration settings for various environments and machines
 
 ## Instructions to clone directory
 * "git init" (in home directory)
