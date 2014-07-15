@@ -1,1 +1,0 @@
-This file is just here so github will sync this folder for use with my .vimrc.
