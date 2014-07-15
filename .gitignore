@@ -10,10 +10,11 @@
 # vim stuff
 !.vimrc
 !.vim/
-!.vim/backup/
-!.vim/swp/
-!.vim/backup/placeholder.txt
-!.vim/swp/placeholder.txt
+# keeping these synced could lead to files being exposed
+# !.vim/backup/
+# !.vim/swp/
+# !.vim/backup/placeholder.txt
+# !.vim/swp/placeholder.txt
 !.vim/colors/
 !.vim/colors/*
 
