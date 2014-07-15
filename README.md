@@ -1,6 +1,11 @@
 ### Configuration settings for various environments and machines
 
-#### Instructions to clone directory
+
+#### Instructions to clone directory and not sync (anybody but me)
+* git clone git://github.com/jsreese92/dotfiles.git ~/.
+* copy relevant files from ~/dotfiles/ to ~
+
+#### Instructions to sync directory with my other computers
 * "git init" (in home directory)
 * "git remote add origin git@github.com:jsreese92/dotfiles.git"
 * set up rsa key as explained here: https://help.github.com/articles/generating-ssh-keys
