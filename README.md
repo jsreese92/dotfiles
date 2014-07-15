@@ -6,8 +6,8 @@
 * set up rsa key as explained here: https://help.github.com/articles/generating-ssh-keys
 * git pull origin master
 * git submodule add git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
-* ln -s .zsh_custom/jreese.zsh ~/.oh-my-zsh/custom/
-* ln -s .zsh_custom/themes ~/.oh-my-zsh/custom/themes
+* ln -s ~/.zsh_custom/jreese.zsh ~/.oh-my-zsh/custom/
+* ln -s ~/.zsh_custom/themes ~/.oh-my-zsh/custom/themes
 
 #### Machines currently synced
 * My MacbookPro
