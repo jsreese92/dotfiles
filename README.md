@@ -4,6 +4,7 @@
 #### Instructions to clone directory and not sync (anybody but me)
 * git clone git://github.com/jsreese92/dotfiles.git ~/dotfiles
 * copy relevant files from ~/dotfiles/ to ~
+  * I recommend .vimrc, .vim/, and .oh-my-zsh (another git repo) at least
 
 #### Instructions to sync directory with my other computers
 * "git init" (in home directory)
