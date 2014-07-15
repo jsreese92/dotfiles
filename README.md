@@ -2,7 +2,7 @@
 
 
 #### Instructions to clone directory and not sync (anybody but me)
-* git clone git://github.com/jsreese92/dotfiles.git ~/.
+* git clone git://github.com/jsreese92/dotfiles.git ~/dotfiles
 * copy relevant files from ~/dotfiles/ to ~
 
 #### Instructions to sync directory with my other computers
