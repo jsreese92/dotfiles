@@ -1,64 +1,20 @@
-" to fold/unfold: za
+" folds: to fold/unfold: za, open all: zR, close all: zM
 
 " General Options {{{1
 
-" Use Vim settings, rather than Vi settings (much better!).
+" Use Vim settings, rather than Vi settings
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-
-"1}}}
-
+" Formatting {{{2
 
 " Tells vim to ignore case in searches, unless you specify case
 set ignorecase
 set smartcase
 
-" Ctags and taglist stuff {{{1
-
-" search current directory for tags and work towards root until one is found
-set tags=./tags;/
-" open definition in a new tab with ctrl+\
-map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-" open definition in a vertical split
-map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
-" 1}}}
-
-"change default colorscheme
-colorscheme zenburn
-
-" 80 character column support
-" set cc=80
-
-"so screen likes 256 colors in vim
-set t_Co=256
-
-"Puts line number on the side by default
-set number
-
-" When vim closes unexpectedly, those annoying .swp files go here 
-" instead of the directory in which you're working
-set directory=~/.vim/swp
-
-" Similar to the above, when editing a file with vim, it sometimes
-" makes a backup of the file, which has the same name followed by ~
-" This puts all these files in a folder to avoid cluttering
-set backupdir=~/.vim/backup
-
-"Gives syntax highlighting to .siml files
-au BufRead,BufNewFile *.siml set filetype=xml
-
 "Sets bash-like file completion in vim
 set wildmode=longest,list,full
 set ls=2
-
-"Maps full page up and down to u and d
-map <C-d> <C-f>
-map <C-u> <C-b>
-
-"Makes tab switch between split windows
-set autochdir
-map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 
 "Makes tabs 2 spaces
 set expandtab
@@ -73,6 +29,83 @@ set ruler		" show the cursor position all the time
 set showcmd		" display incomplete commands
 set incsearch		" do incremental searching
 
+" 2}}}
+
+" Misc {{{2
+
+" In many terminal emulators the mouse works just fine, thus enable it.
+if has('mouse')
+  set mouse=a
+endif
+
+" 2}}}
+
+
+
+" Ctags and taglist stuff {{{2
+
+" search current directory for tags and work towards root until one is found
+set tags=./tags;/
+" open definition in a new tab with ctrl+\
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+" open definition in a vertical split
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+" 2}}}
+
+" Color stuff {{{2
+
+"change default colorscheme
+colorscheme zenburn
+
+" 80 character column support
+" set cc=80
+
+"so screen likes 256 colors in vim
+set t_Co=256
+
+" 2}}}
+
+" Layout {{{2
+
+"Puts line number on the side by default
+set number
+
+" 2}}}
+
+" Backup files {{{2
+
+" When vim closes unexpectedly, those annoying .swp files go here 
+" instead of the directory in which you're working
+set directory=~/.vim/swp
+
+" Similar to the above, when editing a file with vim, it sometimes
+" makes a backup of the file, which has the same name followed by ~
+" This puts all these files in a folder to avoid cluttering
+set backupdir=~/.vim/backup
+
+" 2}}}
+
+
+"1}}}
+
+" Settings for other languges {{{1
+
+"Gives syntax highlighting to .siml files
+au BufRead,BufNewFile *.siml set filetype=xml
+
+" 1}}}
+
+" Key Mappings {{{1
+
+"Maps full page up and down to u and d
+map <C-d> <C-f>
+map <C-u> <C-b>
+
+"Makes tab switch between split windows
+set autochdir
+map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
+
 " Don't use Ex mode, use Q for formatting
 map Q gq
 
@@ -80,10 +113,9 @@ map Q gq
 " so that you can undo CTRL-U after inserting a line break.
 inoremap <C-U> <C-G>u<C-U>
 
-" In many terminal emulators the mouse works just fine, thus enable it.
-if has('mouse')
-  set mouse=a
-endif
+" 1}}}
+
+" Syntax highlighting etc. {{{1
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -125,5 +157,7 @@ else
   set autoindent		" always set autoindenting on
 
 endif " has("autocmd")
+
+" 1}}}
 
 " vim:fdm=marker
