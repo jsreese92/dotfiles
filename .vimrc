@@ -1,10 +1,40 @@
 " folds: to fold/unfold: za, open all: zR, close all: zM
 
-" General Options {{{1
-
 " Use Vim settings, rather than Vi settings
 " This must be first, because it changes other options as a side effect.
 set nocompatible
+
+" Plugins {{{1
+
+" Pathogen {{{2
+
+execute pathogen#infect()
+
+" from this guy: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+" 2}}}
+
+" Ctags and taglist stuff {{{2
+
+" search current directory for tags and work towards root until one is found
+set tags=./tags;/
+
+" open definition in a new tab with ctrl+\
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+
+" open definition in a vertical split
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+" put Tlist on the right window (Nerd tree on the left)
+let Tlist_Use_Right_Window = 1
+
+" 2}}}
+
+" 1}}}
+
+" General Options {{{1
 
 " Formatting {{{2
 
@@ -37,17 +67,6 @@ set incsearch		" do incremental searching
 if has('mouse')
   set mouse=a
 endif
-
-" 2}}}
-
-" Ctags and taglist stuff {{{2
-
-" search current directory for tags and work towards root until one is found
-set tags=./tags;/
-" open definition in a new tab with ctrl+\
-map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-" open definition in a vertical split
-map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
 " 2}}}
 
@@ -102,6 +121,7 @@ map <C-u> <C-b>
 
 " Change local directory when you change windows in vim
 set autochdir
+
 " Makes ctrl-tab switch between split windows. This interferes with TagList, disabling
 " map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 
