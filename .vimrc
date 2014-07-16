@@ -59,8 +59,8 @@ colorscheme zenburn
 " 80 character column support
 " set cc=80
 
-"so screen likes 256 colors in vim
-" set t_Co=256
+" force 256 colors in vim
+set t_Co=256
 
 " 2}}}
 
