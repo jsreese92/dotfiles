@@ -40,8 +40,6 @@ endif
 
 " 2}}}
 
-
-
 " Ctags and taglist stuff {{{2
 
 " search current directory for tags and work towards root until one is found
