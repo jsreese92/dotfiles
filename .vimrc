@@ -54,7 +54,7 @@ map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 " Color stuff {{{2
 
 "change default colorscheme
-colorscheme zenburn
+colorscheme zenburn_j
 
 " 80 character column support
 " set cc=80
