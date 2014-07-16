@@ -100,9 +100,10 @@ au BufRead,BufNewFile *.siml set filetype=xml
 map <C-d> <C-f>
 map <C-u> <C-b>
 
-"Makes tab switch between split windows
+" Change local directory when you change windows in vim
 set autochdir
-map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
+" Makes ctrl-tab switch between split windows. This interferes with TagList, disabling
+" map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
