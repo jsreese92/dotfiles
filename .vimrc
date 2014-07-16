@@ -60,7 +60,7 @@ colorscheme zenburn
 " set cc=80
 
 "so screen likes 256 colors in vim
-set t_Co=256
+" set t_Co=256
 
 " 2}}}
 
