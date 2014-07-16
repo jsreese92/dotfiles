@@ -10,6 +10,10 @@
 # vim stuff
 !.vimrc
 !.vim/
+!.vim/after/
+!.vim/after/plugin/
+!.vim/after/plugin/noAutoComments.vim
+
 # keeping these synced could lead to files being exposed
 # !.vim/backup/
 # !.vim/swp/

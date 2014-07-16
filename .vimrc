@@ -1,10 +1,28 @@
+" to fold/unfold: za
+
+" General Options {{{1
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+
+"1}}}
+
+
 " Tells vim to ignore case in searches, unless you specify case
 set ignorecase
 set smartcase
+
+" Ctags and taglist stuff {{{1
+
+" search current directory for tags and work towards root until one is found
+set tags=./tags;/
+" open definition in a new tab with ctrl+\
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+" open definition in a vertical split
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+" 1}}}
 
 "change default colorscheme
 colorscheme zenburn
@@ -107,3 +125,5 @@ else
   set autoindent		" always set autoindenting on
 
 endif " has("autocmd")
+
+" vim:fdm=marker
