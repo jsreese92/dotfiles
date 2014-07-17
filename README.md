@@ -4,6 +4,7 @@
 #### How to sync
 * Download DotfileConfig.py
 * mv DotfileConfig.py DotfileConfig_tmp.py
+* chmod u+x DotfileConfig_tmp.py
 * ./DotfileConfig_tmp.py --init
 
 #### To Remove
