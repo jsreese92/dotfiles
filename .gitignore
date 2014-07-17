@@ -2,7 +2,7 @@
 *
 
 # except directories
-!*/
+# !*/
 
 # except specified dotfiles
 
