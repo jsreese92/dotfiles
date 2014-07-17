@@ -37,6 +37,11 @@ if __name__ == "__main__":
       print "Setting up NERDtree"
       call (["git", "clone", "git://github.com/scrooloose/nerdtree.git", ".vim/bundle/nerdtree"])
 
+      # put symlinks to point to custom zsh stuff
+      call (["cd", ".oh-my-zsh/custom"])
+      call (["ln", "-s", "!/.zsh_custom/jreese.zsh"])
+      call (["ln", "-s", "!/.zsh_custom/themes"])
+
     # TODO: should probably make this a little safer
     elif (str(sys.argv[1]) == "--clean"):
       # print "changing to home directory"
