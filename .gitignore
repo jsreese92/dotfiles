@@ -1,6 +1,10 @@
-# Ignore everything, except specified dotfiles
-
+# Ignore everything
 *
+
+# except directories
+!*/
+
+# except specified dotfiles
 
 !.gitignore
 !.oh-my-zsh
@@ -15,6 +19,9 @@
 !.vim/after/plugin/noAutoComments.vim
 # TODO: get pathogen and plugins to play nice
 !.vim/bundle/
+!.vim/bundle/taglist/
+!.vim/bundle/taglist/doc/*
+!.vim/bundle/taglist/plugin/*
 !.vim/bundle/nerdtree
 !.vim/autoload
 !.vim/autoload/pathogen.vim
