@@ -11,7 +11,6 @@ set nocompatible
 execute pathogen#infect()
 
 " from this guy: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
-call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 " 2}}}

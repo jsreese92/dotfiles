@@ -14,6 +14,8 @@
 !.vim/after/plugin/
 !.vim/after/plugin/noAutoComments.vim
 # TODO: get pathogen and plugins to play nice
+!.vim/bundle/
+!.vim/bundle/nerdtree
 
 # keeping these synced could lead to files being exposed
 # !.vim/backup/
