@@ -3,7 +3,8 @@
 
 #### How to sync
 * Download DotfileConfig.py
-* ./DotfileConfig.py --init
+* mv DotfileConfig.py DotfileConfig_tmp.py
+* ./DotfileConfig_tmp.py --init
 
 #### To Remove
 * WARNING: This may remove files other than those that came with this repo. 
