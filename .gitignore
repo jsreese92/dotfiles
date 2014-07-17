@@ -2,11 +2,11 @@
 
 *
 
-# except specified dotfiles
+# except specified files
 
 !.gitignore
-
 !README.md
+!DotfileConfig.py
 
 # vim stuff
 !.vimrc
