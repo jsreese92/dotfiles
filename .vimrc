@@ -123,6 +123,10 @@ set autochdir
 
 " Makes ctrl-tab switch between split windows. This interferes with TagList, disabling
 " map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
+map <C-H> <C-W>h:cd %:p:h<CR>:<CR>
+map <C-J> <C-W>j:cd %:p:h<CR>:<CR>
+map <C-K> <C-W>k:cd %:p:h<CR>:<CR>
+map <C-L> <C-W>l:cd %:p:h<CR>:<CR>
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
