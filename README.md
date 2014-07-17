@@ -4,6 +4,7 @@
 #### How to sync
 * Download DotfileConfig.py
 * mv DotfileConfig.py DotfileConfig_tmp.py
+* chmod u+x DotfileConfig_tmp.py
 * ./DotfileConfig_tmp.py --init
 
 #### To Remove
@@ -17,6 +18,3 @@ DotfileConfig.py's source code and make sure
 * My MacbookPro
 * Windows VM at work running Cygwin
 * Ubuntu 12.04 Desktop VM at work
-
-###### Testing
-* Ubuntu test
