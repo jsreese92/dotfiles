@@ -3,6 +3,9 @@
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
+# changes terminal to support 256 colors
+export TERM="xterm-256color"
+
 # prints actual path to directory, ignoring symlinks
 alias pwd='pwd -P'
 # preserves time-stamp and confirms over-write
