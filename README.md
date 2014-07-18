@@ -3,6 +3,7 @@
 
 #### How to sync
 * NOTE: this only works if I set up an ssh key and add the computer to my github ssh key list. If someone other than me wants to set this up, you can do git clone \<this directory\> and manually do this, or modify DotfileConfig.py
+* CYGWIN: you'll have to install a lot of optional executables like vim, git, curl, zsh, etc. If something doesn't work that's probably why
 * Download DotfileConfig.py
 * mv DotfileConfig.py DotfileConfig_tmp.py
 * chmod u+x DotfileConfig_tmp.py
