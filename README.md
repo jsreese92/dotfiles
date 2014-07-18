@@ -2,7 +2,7 @@
 
 
 #### How to sync
-* NOTE: this only works if I set up an ssh key and add the computer to my github ssh key list. If someone other than me wants to set this up, you can do git clone <this directory> and manually do this, or modify DotfileConfig.py
+* NOTE: this only works if I set up an ssh key and add the computer to my github ssh key list. If someone other than me wants to set this up, you can do git clone \<this directory\> and manually do this, or modify DotfileConfig.py
 * Download DotfileConfig.py
 * mv DotfileConfig.py DotfileConfig_tmp.py
 * chmod u+x DotfileConfig_tmp.py
