@@ -19,3 +19,4 @@ DotfileConfig.py's source code and make sure
 * My MacbookPro
 * Windows VM at work running Cygwin
 * Ubuntu 12.04 Desktop VM at work
+* Windows local machine at work Cygwin
