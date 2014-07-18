@@ -26,10 +26,12 @@ if __name__ == "__main__":
       call (["git", "remote", "add", "origin", "git@github.com:jsreese92/dotfiles.git"])
       call (["git", "pull", "origin", "master"])
 
+      # go ahead and copy and hide DotfileConfig.py to use later
+      call (["cp", "DotfileConfig.py", ".DotfileConfig.py"])
+
       # initialize vim backup directories
       call (["mkdir", ".vim/backup"])
       call (["mkdir", ".vim/swp"])
-
 
       print "Cloning oh-my-zsh to ~/.oh-my-zsh"
       call (["git", "clone", "git://github.com/robbyrussell/oh-my-zsh.git", ".oh-my-zsh"])
