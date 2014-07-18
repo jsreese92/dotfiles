@@ -50,8 +50,8 @@ if __name__ == "__main__":
       # put symlinks to point to custom zsh stuff
       # TODO: this apparently doesn't work
       call (["cd", ".oh-my-zsh/custom"])
-      call (["ln", "-s", "!/.zsh_custom/jreese.zsh"])
-      call (["ln", "-s", "!/.zsh_custom/themes"])
+      call (["ln", "-s", "~/.zsh_custom/jreese.zsh"])
+      call (["ln", "-s", "~/.zsh_custom/themes"])
 
     # TODO: should probably make this a little safer
     elif (str(sys.argv[1]) == "--clean"):
