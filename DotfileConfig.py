@@ -37,6 +37,9 @@ if __name__ == "__main__":
       print "Setting up NERDtree"
       call (["git", "clone", "git://github.com/scrooloose/nerdtree.git", ".vim/bundle/nerdtree"])
 
+      print "setting up indentLine"
+      call ([" git", "clone", "git@github.com:Yggdroot/indentLine.git", ".vim/bundle/indentLine"])
+
       # put symlinks to point to custom zsh stuff
       call (["cd", ".oh-my-zsh/custom"])
       call (["ln", "-s", "!/.zsh_custom/jreese.zsh"])
@@ -52,6 +55,7 @@ if __name__ == "__main__":
       rmtree("./.vim/colors", ignore_errors=True)
       rmtree("./.vim/bundle/taglist", ignore_errors=True)
       rmtree("./.vim/bundle/nerdtree", ignore_errors=True)
+      rmtree("./.vim/bundle/indentLine", ignore_errors=True)
       rmtree("./.zsh_custom", ignore_errors=True)
       rmtree("./.oh-my-zsh", ignore_errors=True)
 
