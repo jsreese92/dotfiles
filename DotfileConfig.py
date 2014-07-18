@@ -26,6 +26,11 @@ if __name__ == "__main__":
       call (["git", "remote", "add", "origin", "git@github.com:jsreese92/dotfiles.git"])
       call (["git", "pull", "origin", "master"])
 
+      # initialize vim backup directories
+      call (["mkdir", ".vim/backup"])
+      call (["mkdir", ".vim/swp"])
+
+
       print "Cloning oh-my-zsh to ~/.oh-my-zsh"
       call (["git", "clone", "git://github.com/robbyrussell/oh-my-zsh.git", ".oh-my-zsh"])
       call (["cp", ".oh-my-zsh/templates/zshrc.zsh-template", ".zshrc"])
