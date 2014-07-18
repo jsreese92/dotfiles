@@ -22,5 +22,7 @@ alias lt='ls -tlh'
 alias cd='cd -P'
 # grep ignore case with color
 alias grep='grep -i'
+# make rm verbose
+alias rm='rm -v'
 
 ZSH_THEME="robbyrussell_j"
