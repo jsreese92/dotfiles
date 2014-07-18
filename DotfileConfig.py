@@ -31,16 +31,19 @@ if __name__ == "__main__":
       call (["cp", ".oh-my-zsh/templates/zshrc.zsh-template", ".zshrc"])
 
       print "Setting up pathogen"
-      call (["mkdir", "-p", ".vim/autoload/pathogen.vim"])
+      call (["mkdir", "-p", ".vim/autoload/"])
       call (["curl", "-LSso", ".vim/autoload/pathogen.vim", "https://tpo.pe/pathogen.vim"])
 
       print "Setting up NERDtree"
+      call (["mkdir", "-p", ".vim/bundle/"])
       call (["git", "clone", "git://github.com/scrooloose/nerdtree.git", ".vim/bundle/nerdtree"])
 
       print "setting up indentLine"
-      call ([" git", "clone", "git@github.com:Yggdroot/indentLine.git", ".vim/bundle/indentLine"])
+      call (["mkdir", "-p", ".vim/bundle/"])
+      call (["git", "clone", "git@github.com:Yggdroot/indentLine.git", ".vim/bundle/indentLine"])
 
       # put symlinks to point to custom zsh stuff
+      # TODO: this apparently doesn't work
       call (["cd", ".oh-my-zsh/custom"])
       call (["ln", "-s", "!/.zsh_custom/jreese.zsh"])
       call (["ln", "-s", "!/.zsh_custom/themes"])
@@ -62,7 +65,7 @@ if __name__ == "__main__":
       filesToDeleteList = ["./.gitignore", "./.gitmodules", "./.gnome-terminal-zenburn.sh", 
           "./.minttyrc", "./.tmux.conf", "./.vimrc", "./.zenburn.vssettings", "./README.md",
           "./.vim/after/plugin/noAutoComments.vim", "./.vim/autoload/pathogen.vim",
-          "./.zshrc"] 
+          "./.zshrc", "./DotfileConfig.py"] 
       for f in filesToDeleteList:
         try: 
           remove(f)
