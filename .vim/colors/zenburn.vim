@@ -467,7 +467,9 @@ else
         hi VisualNOS     guibg=#2f2f2f
 
         if &t_Co > 255
-            hi Visual    ctermbg=235
+            " hi Visual    ctermbg=235
+            " change visual mode highlighting. Default above
+            hi Visual    ctermbg=1
             hi VisualNOS ctermbg=235
         endif
     endif
