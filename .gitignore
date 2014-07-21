@@ -7,6 +7,8 @@
 !.gitignore
 !README.md
 !DotfileConfig.py
+!bin/
+!bin/tmux
 
 # vim stuff
 !.vimrc
