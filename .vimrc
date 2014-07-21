@@ -80,6 +80,9 @@ colorscheme zenburn
 " force 256 colors in vim
 set t_Co=256
 
+" fix colors in tmux
+set t_ut=
+
 " 2}}}
 
 " Layout {{{2
