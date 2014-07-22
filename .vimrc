@@ -192,7 +192,7 @@ set statusline +=%1*\ %n\ %*           " buffer number
 set statusline +=%5*%{&ff}%*           " file format
 set statusline +=%3*%y%*               " file type
 set statusline +=%4*\ %<%F%*           " full path
-set statusline +=%2*%m%r%*             " modified and readonly flag
+set statusline +=%2*\ *%m%r%*             " modified and readonly flag
 
 " 1}}}
 
