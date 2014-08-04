@@ -21,7 +21,7 @@ alias lt='ls -tlh'
 # makes cd follow actual path instead of symlinks
 alias cd='cd -P'
 # grep ignore case with color
-alias grep='grep -i'
+alias grep='grep -iI'
 # make rm verbose
 alias rm='rm -v'
 
